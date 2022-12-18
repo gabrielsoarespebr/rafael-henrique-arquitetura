@@ -1,4 +1,3 @@
-import { Header } from '../../Components/Header';
 import styles from './styles.module.css';
 
 export const Contato = () => {

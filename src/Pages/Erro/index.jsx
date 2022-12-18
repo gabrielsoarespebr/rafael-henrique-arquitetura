@@ -1,9 +1,9 @@
 import styles from './styles.module.css';
 
-export const Projetos = () => {
+export const Erro = () => {
     return (
         <>
-            <p>Tela de projetos</p>
+            <p>Página não encontrada</p>
         </>
     )
 }
