@@ -1,0 +1,68 @@
+section {
+    height: 60vh;
+}
+
+section img {
+    animation: crossfade 20s infinite ease-in-out;
+
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+
+    position: absolute;
+}
+
+section img:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+section img:nth-of-type(2) {
+    animation-delay: 5s;
+}
+
+section img:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+section img:nth-of-type(4) {
+    animation-delay: 15s;
+}
+
+/* 
+https://www.devtwins.com/blog/css-cross-fading-images 
+n = number of images
+a = presentation time for one image
+b = duration for cross-fading
+
+animation-duration = t = (a + b) * n
+
+animation-delay = t/n or a + b
+
+No matter how many images you are using, you will always have 5 keyframes in your fade animation:
+0%
+a/t * 100%
+(a + b) / t * 100% = 1/n * 100%
+100% - (b/t * 100%)
+100%
+*/
+@keyframes crossfade {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
