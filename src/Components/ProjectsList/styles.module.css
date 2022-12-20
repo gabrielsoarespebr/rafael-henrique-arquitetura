@@ -1,0 +1,26 @@
+.sidebar {
+    width: 30vw;
+    height: 89vh;
+
+    overflow: auto;
+
+    background-color: black;
+}
+
+/* SCROLL - BACK */
+.sidebar::-webkit-scrollbar{
+    width: 8px;
+}
+
+.sidebar:hover::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+/* SCROLL - FRONT */
+.sidebar::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(161, 161, 161);
+}
